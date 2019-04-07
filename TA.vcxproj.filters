@@ -21,9 +21,27 @@
     <ClCompile Include="VerificareAlfabet.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="PCA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EcuatieAlgebricaInR.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Norme.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="VerificareAlfabet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PCA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EcuatieAlgebricaInR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Norme.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

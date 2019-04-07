@@ -1,5 +1,9 @@
 #include <iostream>
 #include <cmath>
+#include <vector>
+#include "Norme.h"
+#include "PCA.h"
+#include "EcuatieAlgebricaInR.h"
 #include "VerificareAlfabet.h"
 
 
@@ -188,12 +192,20 @@ int main() // PROGRAM PRINCIPAL
 
 				switch (op1)
 				{
-				case 1:
-					// norme();
+				case 1: {
+					Norme norma;
+					vector<vector<double>> A = { {3,5},{2,1} };
+					norma.normaUnuMatrici(A);
+					norma.normaInfinitMatrici(A);
+					norma.normaDoiMatrici(A); 
+				}
 					break;
 
 				case 2:
-					rezolvare_ecuatie();
+				{
+					EcuatieAlgebricaInR ecuatie;
+					ecuatie.rezolvare_ecuatie();
+				}
 					break;
 
 				case 0:
@@ -226,12 +238,27 @@ int main() // PROGRAM PRINCIPAL
 				switch (op2)
 				{
 				case 1: //permutari
-					permutari();
-					break;
+				{
+					PCA per;
+					per.permutari(5);
+
+				}
+				break;
 
 				case 2:
 					// Combinari
 				{
+					PCA comb;
+					comb.combinari(5, 2);
+
+				}
+				break;
+
+				case 3:
+					// Combinari
+				{
+					PCA aran;
+					aran.aranjamente(3, 2);
 
 				}
 				break;

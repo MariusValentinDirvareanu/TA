@@ -9,21 +9,48 @@ VerificareAlfabet::VerificareAlfabet()
 
 void VerificareAlfabet::verificare_alfabet()
 { // procedura verificare alfabet
-	// citim datele
-	cout << "Numarul de litere in alfabet m="; cin >> m;
-	cout << "Citeste legea de compozitie (adica, matricea M)\n";
-	for (i = 1; i <= m; i++)
-		for (j = 1; j <= m; j++)
-			cin >> M[i][j];
-	cout << "Numarul de litere din cuvant n="; cin >> n;
-	cout << "Citeste cuvantul (adica, vectorul x)\n";
-	for (i = 1; i <= n; i++)
-		cin >> x[i];
+	CitireDate();
 
 	// Verificare ca in x doar caractere din alfabet, adica numere de la 1 la m
 
 	cout << "Valoarea cuvant y="; cin >> y;
 
+	CompletareStraturi();
+	StraturiMatrice();
+
+	VerificareCompunere();
+}
+
+void VerificareAlfabet::VerificareCompunere()
+{
+	cout << "Pentru x = ";
+	for (i = 1; i <= n; i++)
+		cout << x[i] << " ";
+	if (A[1][n][y] == 1)
+	{
+		cout << "  exista compunere astfel incat sa obtinem y = " << y << endl;
+		// TEMA: Scrieti parantezarea la fel ca la produsul de matrice
+	}
+	else
+		cout << "  NU exista compunere astfel incat sa obtinem y = " << y << endl;
+}
+
+void VerificareAlfabet::CitireDate()
+{
+	// citim datele
+	cout << "Numarul de litere in alfabet m="; cin >> m;
+	cout << "Citeste legea de compozitie (adica, matricea M)\n";
+	for (i = 1; i <= m; i++)
+		for (j = 1; j <= m; j++)
+			cin >> M.at(i).at(j);
+	cout << "Numarul de litere din cuvant n="; cin >> n;
+	cout << "Citeste cuvantul (adica, vectorul x)\n";
+	for (i = 1; i <= n; i++)
+		cin >> x.at(i);
+}
+
+void VerificareAlfabet::CompletareStraturi()
+{
 	// calculam matricele layer(straturi)
 	// completam straturile pe diagonalele principale
 	for (i = 1; i <= n; i++)
@@ -48,28 +75,21 @@ void VerificareAlfabet::verificare_alfabet()
 						}
 				}
 			}
+}
+
+void VerificareAlfabet::StraturiMatrice()
+{
 	// Scrie matricele straturi
 	for (a = 1; a <= m; a++)
 	{
-		cout << "Stratul a = " << a << " este " << endl;
+		cout << "Stratul a = " << a << " este \n";
 		for (i = 1; i <= n; i++)
 		{
 			for (j = 1; j <= n; j++)
 				cout << A[i][j][a] << " ";
-			cout << endl;
+			cout << '\n';
 		}
 	}
-
-	cout << "Pentru x = ";
-	for (i = 1; i <= n; i++)
-		cout << x[i] << " ";
-	if (A[1][n][y] == 1)
-	{
-		cout << "  exista compunere astfel incat sa obtinem y = " << y << endl;
-		// TEMA: Scrieti parantezarea la fel ca la produsul de matrice
-	}
-	else
-		cout << "  NU exista compunere astfel incat sa obtinem y = " << y << endl;
 }
 
 
