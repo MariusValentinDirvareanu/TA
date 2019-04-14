@@ -5,93 +5,12 @@
 #include "PCA.h"
 #include "EcuatieAlgebricaInR.h"
 #include "VerificareAlfabet.h"
+#include "AckermannListe.h"
 
 
 using namespace std;
 
-
-// pentru functia Ackermann
-struct v {
-	int val;
-	v* prec;
-	v* urm;
-};
-
-void parcurgere_lista(v * p, v * u)
-{
-	v* q;
-	if (p == NULL)
-		cout << "Lista este vida!" << endl;
-	else
-	{
-		q = p;
-		while (q != NULL)
-		{
-			cout << q->val << " ";
-			q = q->urm;
-		}
-		cout << endl;
-	}
-}
-
-int Ackermann_liste(int m, int n)
-{
-	v* p, * u, * q;
-
-	//initializare lista dublu inlantuita
-	//primul element
-	p = new v;
-	p->val = m;
-	p->prec = NULL;
-	//ultimul element
-	u = new v;
-	u->val = n;
-	u->urm = NULL;
-	p->urm = u;
-	u->prec = p;
-	parcurgere_lista(p, u);
-
-	int k = 2; // numarul de elemnte din lista
-	while (k > 1)
-	{
-		if (u->prec->val == 0) // ac(0,n)=n+1
-		{
-			u->prec->val = u->val + 1;
-			q = u;
-			u = u->prec;
-			u->urm = NULL;
-			k--;
-			delete q;
-		}
-		else
-		{
-			if (u->val == 0) // ac(m,0)=ac(m-1,1)
-			{
-				u->val = 1;
-				u->prec->val = u->prec->val - 1;
-			}
-			else  // ac(m,n)=ac(m-1,ac(m,n-1))
-			{
-				q = new v;
-				q->val = u->val - 1;
-				q->prec = u;
-				q->urm = NULL;
-				u->val = u->prec->val;
-				u->prec->val = u->prec->val - 1;
-				u->urm = q;
-				u = q;
-				k++;
-			}
-		}
-		parcurgere_lista(p, u);
-	}
-	return p->val;
-}
-
-
-
-int main() // PROGRAM PRINCIPAL
-{
+int main() {
 	int op, op1, op2, op3, op4, op5, op6;
 
 	do  // reia meniu principal pana la exit
@@ -251,11 +170,8 @@ int main() // PROGRAM PRINCIPAL
 				case 4:
 					// Ackermann cu liste
 				{
-					int m, n;
-					cout << "m = "; cin >> m;
-					cout << "n = "; cin >> n;
-					int ac = Ackermann_liste(m, n);
-					cout << "ac(" << m << "," << n << ") = " << ac << endl;
+					AckermannListe ac(3, 2);
+					
 				}
 				break;
 
