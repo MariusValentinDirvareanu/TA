@@ -6,6 +6,7 @@
 #include "EcuatieAlgebricaInR.h"
 #include "VerificareAlfabet.h"
 #include "AckermannListe.h"
+#include "Binar.h"
 
 
 using namespace std;
@@ -261,6 +262,7 @@ int main() {
 				cout << "6.1. Parantezarea produsului de matrice cu numar minim de inmultiri" << endl;
 				cout << "6.2. Determinarea sumei maxime intr-un triunghi de numere" << endl;
 				cout << "6.3. Verificare cuvant in alfabet" << endl;
+				cout << "6.4. Binar" << endl;
 				cout << "6.0. Exit Divide et Impera!" << endl;
 
 				cout << "Optiune probleme diverse : "; cin >> op6;
@@ -280,6 +282,12 @@ int main() {
 					VerificareAlfabet cuvant;
 					}	
 					break;
+
+				case 4:
+				{
+					Binar b(5);
+				}
+				break;
 
 				case 0:
 					cout << "A terminat submeniu 6" << endl << endl;

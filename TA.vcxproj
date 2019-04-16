@@ -125,6 +125,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AckermannListe.cpp" />
+    <ClCompile Include="Binar.cpp" />
     <ClCompile Include="EcuatieAlgebricaInR.cpp" />
     <ClCompile Include="Norme.cpp" />
     <ClCompile Include="PCA.cpp" />
@@ -133,6 +134,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AckermannListe.h" />
+    <ClInclude Include="Binar.h" />
     <ClInclude Include="EcuatieAlgebricaInR.h" />
     <ClInclude Include="Norme.h" />
     <ClInclude Include="PCA.h" />
