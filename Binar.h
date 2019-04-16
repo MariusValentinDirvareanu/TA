@@ -19,7 +19,7 @@ private:
 	nod* q, * p;
 
 public:
-	Binar() = delete;
+	Binar();
 	Binar(int);
 	void bin(int);
 	void print(lista*);

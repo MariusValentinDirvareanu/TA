@@ -2,7 +2,13 @@
 
 
 
-Binar::Binar(int n){
+Binar::Binar() {
+}
+
+Binar::Binar(int n) {
+	this->n = n;
+	U = nullptr;
+	V = nullptr;
 	B1 = new lista;
 	p = new nod;
 	p->val = 0;
@@ -25,13 +31,15 @@ Binar::Binar(int n){
 		C = B1;
 		U = B2;
 		bin(0);
-		}
-	print(B2);
+		bin(1);
+		print(B1);
+		print(B2);
+		B1 = B2;
 	}
+}
 
 
-void Binar::bin(int factor)
-{
+void Binar::bin(int factor) {
 	while (C->urm) {
 		q = new nod;
 		q->val = factor;
