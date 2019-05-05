@@ -129,6 +129,7 @@
     <ClCompile Include="EcuatieAlgebricaInR.cpp" />
     <ClCompile Include="Norme.cpp" />
     <ClCompile Include="PCA.cpp" />
+    <ClCompile Include="Regine.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="VerificareAlfabet.cpp" />
   </ItemGroup>
@@ -138,6 +139,7 @@
     <ClInclude Include="EcuatieAlgebricaInR.h" />
     <ClInclude Include="Norme.h" />
     <ClInclude Include="PCA.h" />
+    <ClInclude Include="Regine.h" />
     <ClInclude Include="VerificareAlfabet.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

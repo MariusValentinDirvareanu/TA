@@ -36,6 +36,9 @@
     <ClCompile Include="Binar.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Regine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="VerificareAlfabet.h">
@@ -54,6 +57,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Binar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Regine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

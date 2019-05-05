@@ -7,6 +7,7 @@
 #include "VerificareAlfabet.h"
 #include "AckermannListe.h"
 #include "Binar.h"
+#include "Regine.h"
 
 
 using namespace std;
@@ -111,6 +112,14 @@ int main() {
 				{
 					PCA aran;
 					aran.aranjamente(3, 2);
+
+				}
+				break;
+
+				case 4:
+					// Combinari
+				{
+					Regine reg;
 
 				}
 				break;
