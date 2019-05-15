@@ -2,7 +2,6 @@
 #include <iostream>
 #include <fstream>
 #include <climits>
-#include <vector>
 
 class ComisVoiajor
 {
@@ -11,14 +10,14 @@ private:
 	std::ifstream fin;
 
 	int n, m;
-	std::vector<std::vector<int>> ad;
+	int ad[100][100];
 
 	int lgMin;
-	std::vector<int> trMin;
 
 	int lg;
-	std::vector<int> tr;
-	std::vector<bool> vis;
+	int trMin[100];
+	int tr[100];
+	bool vis[100];
 	int x, y, z;
 
 private:
