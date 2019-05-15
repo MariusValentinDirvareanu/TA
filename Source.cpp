@@ -8,6 +8,7 @@
 #include "AckermannListe.h"
 #include "Binar.h"
 #include "Regine.h"
+#include "ComisVoiajor.h"
 
 
 using namespace std;
@@ -123,6 +124,11 @@ int main() {
 
 				}
 				break;
+
+				case 6: {
+					ComisVoiajor comis;
+				}
+						break;
 
 				case 0:
 					cout << "A terminat submeniu Backtracking" << endl << endl;

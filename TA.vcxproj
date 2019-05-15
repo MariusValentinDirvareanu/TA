@@ -126,6 +126,7 @@
   <ItemGroup>
     <ClCompile Include="AckermannListe.cpp" />
     <ClCompile Include="Binar.cpp" />
+    <ClCompile Include="ComisVoiajor.cpp" />
     <ClCompile Include="EcuatieAlgebricaInR.cpp" />
     <ClCompile Include="Norme.cpp" />
     <ClCompile Include="PCA.cpp" />
@@ -136,11 +137,15 @@
   <ItemGroup>
     <ClInclude Include="AckermannListe.h" />
     <ClInclude Include="Binar.h" />
+    <ClInclude Include="ComisVoiajor.h" />
     <ClInclude Include="EcuatieAlgebricaInR.h" />
     <ClInclude Include="Norme.h" />
     <ClInclude Include="PCA.h" />
     <ClInclude Include="Regine.h" />
     <ClInclude Include="VerificareAlfabet.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="comis.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

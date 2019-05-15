@@ -39,6 +39,9 @@
     <ClCompile Include="Regine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ComisVoiajor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="VerificareAlfabet.h">
@@ -62,5 +65,11 @@
     <ClInclude Include="Regine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ComisVoiajor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="comis.txt" />
   </ItemGroup>
 </Project>
