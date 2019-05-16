@@ -66,18 +66,18 @@ int main() {
 				switch (*op1)
 				{
 				case 1: {
-					Norme norma;
+					Norme* norma = new Norme;
 					vector<vector<double>> A = { {3,5},{2,1} };
-					norma.normaUnuMatrici(A);
-					norma.normaInfinitMatrici(A);
-					norma.normaDoiMatrici(A); 
+					norma->normaUnuMatrici(A);
+					norma->normaInfinitMatrici(A);
+					norma->normaDoiMatrici(A); 
 				}
 					break;
 
 				case 2:
 				{
-					EcuatieAlgebricaInR ecuatie;
-					ecuatie.rezolvare_ecuatie();
+					EcuatieAlgebricaInR* ecuatie = new EcuatieAlgebricaInR;
+					ecuatie->rezolvare_ecuatie();
 				}
 					break;
 
@@ -112,8 +112,8 @@ int main() {
 				{
 				case 1: //permutari
 				{
-					PCA per;
-					per.permutari(5);
+					PCA* per = new PCA;
+					per->permutari(5);
 
 				}
 				break;
@@ -121,8 +121,8 @@ int main() {
 				case 2:
 					// Combinari
 				{
-					PCA comb;
-					comb.combinari(5, 2);
+					PCA* comb = new PCA;
+					comb->combinari(5, 2);
 
 				}
 				break;
@@ -130,8 +130,8 @@ int main() {
 				case 3:
 					// Combinari
 				{
-					PCA aran;
-					aran.aranjamente(3, 2);
+					PCA *aran = new PCA;
+					aran->aranjamente(3, 2);
 
 				}
 				break;
@@ -146,7 +146,7 @@ int main() {
 				break;
 
 				case 6: {
-					ComisVoiajor comis;
+					ComisVoiajor* comis = new ComisVoiajor;
 				}
 						break;
 
@@ -248,7 +248,7 @@ int main() {
 				{
 					case 1:
 					{
-						Hanoi hanoi;
+						Hanoi* hanoi = new Hanoi;
 					}
 						break;
 
@@ -315,19 +315,19 @@ int main() {
 				{
 				case 1:
 				{
-					ProdusMatriceParanteze matrice;
+					ProdusMatriceParanteze* matrice = new ProdusMatriceParanteze;
 				}
 					break;
 
 				case 2:
 				{
-					SumaTriunghi triunghi;
+					SumaTriunghi* triunghi = new SumaTriunghi;
 				}
 					break;
 
 				case 3: // verifacre cuvant in alfabet
 					{
-					VerificareAlfabet cuvant;
+					VerificareAlfabet* cuvant = new VerificareAlfabet;
 					}	
 					break;
 
@@ -362,7 +362,7 @@ int main() {
 				{
 				case 1:
 				{
-					Perspico perspico;
+					Perspico* perspico = new Perspico;
 				}
 					break;
 
