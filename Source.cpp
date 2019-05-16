@@ -12,6 +12,7 @@
 #include "Perspico.h"
 #include "SumaTriunghi.h"
 #include "ProdusMatriceParanteze.h"
+#include "Hanoi.h"
 
 
 using namespace std;
@@ -212,7 +213,6 @@ int main() {
 			{
 				cout << endl << "Metoda Divide et Impera" << endl;
 				cout << "4.1. Turnurile din Hanoi" << endl;
-				cout << "4.2. " << endl;
 				cout << "4.0. Exit Divide et Impera!" << endl;
 
 				cout << "Optiune probleme diverse : "; cin >> op4;
@@ -220,7 +220,9 @@ int main() {
 				switch (op4)
 				{
 				case 1:
-					// Turnurile_din_Hanoi();
+				{
+					Hanoi hanoi;
+				}
 					break;
 
 				case 2:
