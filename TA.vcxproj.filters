@@ -45,6 +45,9 @@
     <ClCompile Include="Perspico.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SumaTriunghi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="VerificareAlfabet.h">
@@ -72,6 +75,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Perspico.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SumaTriunghi.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

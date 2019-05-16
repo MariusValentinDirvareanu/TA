@@ -133,6 +133,7 @@
     <ClCompile Include="Perspico.cpp" />
     <ClCompile Include="Regine.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="SumaTriunghi.cpp" />
     <ClCompile Include="VerificareAlfabet.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -144,6 +145,7 @@
     <ClInclude Include="PCA.h" />
     <ClInclude Include="Perspico.h" />
     <ClInclude Include="Regine.h" />
+    <ClInclude Include="SumaTriunghi.h" />
     <ClInclude Include="VerificareAlfabet.h" />
   </ItemGroup>
   <ItemGroup>

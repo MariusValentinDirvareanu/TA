@@ -10,6 +10,7 @@
 #include "Regine.h"
 #include "ComisVoiajor.h"
 #include "Perspico.h"
+#include "SumaTriunghi.h"
 
 
 using namespace std;
@@ -291,7 +292,9 @@ int main() {
 					break;
 
 				case 2:
-
+				{
+					SumaTriunghi triunghi;
+				}
 					break;
 
 				case 3: // verifacre cuvant in alfabet
