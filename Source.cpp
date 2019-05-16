@@ -13,6 +13,7 @@
 #include "SumaTriunghi.h"
 #include "ProdusMatriceParanteze.h"
 #include "Hanoi.h"
+#include "FactorialRecursiv.h"
 
 
 using namespace std;
@@ -171,7 +172,7 @@ int main() {
 				{
 				case 1: //
 				{
-
+					FactorialRecursiv fact;
 				}
 				break;
 
@@ -219,23 +220,19 @@ int main() {
 
 				switch (op4)
 				{
-				case 1:
-				{
-					Hanoi hanoi;
-				}
-					break;
+					case 1:
+					{
+						Hanoi hanoi;
+					}
+						break;
 
-				case 2:
+					case 0:
+						cout << "A terminat submeniu 4" << endl << endl;
+						break;
 
-					break;
-
-				case 0:
-					cout << "A terminat submeniu 4" << endl << endl;
-					break;
-
-				default:
-					cout << "Optiune invalida!" << endl;
-					break;
+					default:
+						cout << "Optiune invalida!" << endl;
+						break;
 
 				}
 			} while (op4 != 0);
