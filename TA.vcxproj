@@ -88,7 +88,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)ProblemaLabirintuluiProiect;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -137,6 +137,7 @@
     <ClCompile Include="Norme.cpp" />
     <ClCompile Include="PCA.cpp" />
     <ClCompile Include="Perspico.cpp" />
+    <ClCompile Include="ProblemaLabirintului.cpp" />
     <ClCompile Include="ProdusMatriceParanteze.cpp" />
     <ClCompile Include="Regine.cpp" />
     <ClCompile Include="Source.cpp" />
@@ -156,6 +157,7 @@
     <ClInclude Include="Norme.h" />
     <ClInclude Include="PCA.h" />
     <ClInclude Include="Perspico.h" />
+    <ClInclude Include="ProblemaLabirintului.h" />
     <ClInclude Include="ProdusMatriceParanteze.h" />
     <ClInclude Include="Regine.h" />
     <ClInclude Include="SumaTriunghi.h" />
@@ -163,11 +165,7 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="comis.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ProblemaLabirintuluiProiect\ProblemaLabirintuluiProiect.vcxproj">
-      <Project>{e10bd481-2168-48b4-a1ee-7ecad94d881b}</Project>
-    </ProjectReference>
+    <Text Include="labirint.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

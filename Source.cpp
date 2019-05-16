@@ -186,21 +186,21 @@ int main() {
 				{
 				case 1: //
 				{
-					FactorialRecursiv fact;
+					FactorialRecursiv* fact = new FactorialRecursiv;
 				}
 				break;
 
 				case 2:
 					//
 				{
-					FibonacciRecursiv fibonacci;
+					FibonacciRecursiv* fibonacci = new FibonacciRecursiv;
 				}
 				break;
 
 				case 3:
 					//
 				{
-					AckermannRecursiv ack;
+					AckermannRecursiv* ack = new AckermannRecursiv;
 				}
 				break;
 				case 4:
@@ -213,13 +213,13 @@ int main() {
 
 				case 8:
 				{
-					FactoriPrimiRecursiv factori;
+					FactoriPrimiRecursiv* factori = new FactoriPrimiRecursiv;
 				}
 				break;
 
 				case 10:
 				{
-					ProblemaLabirintului labirint;
+					ProblemaLabirintului* labirint = new ProblemaLabirintului;
 				}
 				break;
 
