@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.28729.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TA", "TA.vcxproj", "{39E0F254-5758-46DE-A283-1879801B6AD2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProblemaLabirintuluiProiect", "..\ProblemaLabirintuluiProiect\ProblemaLabirintuluiProiect.vcxproj", "{E10BD481-2168-48B4-A1EE-7ECAD94D881B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{39E0F254-5758-46DE-A283-1879801B6AD2}.Release|x64.Build.0 = Release|x64
 		{39E0F254-5758-46DE-A283-1879801B6AD2}.Release|x86.ActiveCfg = Release|Win32
 		{39E0F254-5758-46DE-A283-1879801B6AD2}.Release|x86.Build.0 = Release|Win32
+		{E10BD481-2168-48B4-A1EE-7ECAD94D881B}.Debug|x64.ActiveCfg = Debug|x64
+		{E10BD481-2168-48B4-A1EE-7ECAD94D881B}.Debug|x64.Build.0 = Debug|x64
+		{E10BD481-2168-48B4-A1EE-7ECAD94D881B}.Debug|x86.ActiveCfg = Debug|Win32
+		{E10BD481-2168-48B4-A1EE-7ECAD94D881B}.Debug|x86.Build.0 = Debug|Win32
+		{E10BD481-2168-48B4-A1EE-7ECAD94D881B}.Release|x64.ActiveCfg = Release|x64
+		{E10BD481-2168-48B4-A1EE-7ECAD94D881B}.Release|x64.Build.0 = Release|x64
+		{E10BD481-2168-48B4-A1EE-7ECAD94D881B}.Release|x86.ActiveCfg = Release|Win32
+		{E10BD481-2168-48B4-A1EE-7ECAD94D881B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

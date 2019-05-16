@@ -139,7 +139,8 @@ int main() {
 				case 4:
 					// Combinari
 				{
-					Regine reg;
+					Regine* reg = new Regine;
+					//Regine reg;
 
 				}
 				break;

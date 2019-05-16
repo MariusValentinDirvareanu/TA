@@ -66,9 +66,6 @@
     <ClCompile Include="AckermannRecursiv.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ProblemaLabirintului.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="VerificareAlfabet.h">
@@ -119,12 +116,8 @@
     <ClInclude Include="AckermannRecursiv.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ProblemaLabirintului.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="comis.txt" />
-    <Text Include="labirint.txt" />
   </ItemGroup>
 </Project>
