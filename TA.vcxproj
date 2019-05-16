@@ -129,6 +129,7 @@
     <ClCompile Include="ComisVoiajor.cpp" />
     <ClCompile Include="EcuatieAlgebricaInR.cpp" />
     <ClCompile Include="FactorialRecursiv.cpp" />
+    <ClCompile Include="FactoriPrimiRecursiv.cpp" />
     <ClCompile Include="FibonacciRecursiv.cpp" />
     <ClCompile Include="Hanoi.cpp" />
     <ClCompile Include="Norme.cpp" />
@@ -146,6 +147,7 @@
     <ClInclude Include="ComisVoiajor.h" />
     <ClInclude Include="EcuatieAlgebricaInR.h" />
     <ClInclude Include="FactorialRecursiv.h" />
+    <ClInclude Include="FactoriPrimiRecursiv.h" />
     <ClInclude Include="FibonacciRecursiv.h" />
     <ClInclude Include="Hanoi.h" />
     <ClInclude Include="Norme.h" />

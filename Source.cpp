@@ -15,6 +15,7 @@
 #include "Hanoi.h"
 #include "FactorialRecursiv.h"
 #include "FibonacciRecursiv.h"
+#include "FactoriPrimiRecursiv.h"
 
 
 using namespace std;
@@ -198,8 +199,14 @@ int main() {
 				}
 				break;
 
+				case 8:
+				{
+					FactoriPrimiRecursiv factori;
+				}
+				break;
+
 				case 0:
-					cout << "A terminat submeniu 2" << endl << endl;
+					cout << "A terminat submeniu 3" << endl << endl;
 					break;
 
 				default:

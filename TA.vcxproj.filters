@@ -60,6 +60,9 @@
     <ClCompile Include="FibonacciRecursiv.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="FactoriPrimiRecursiv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="VerificareAlfabet.h">
@@ -102,6 +105,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="FibonacciRecursiv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FactoriPrimiRecursiv.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
