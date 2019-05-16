@@ -125,6 +125,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AckermannListe.cpp" />
+    <ClCompile Include="AckermannRecursiv.cpp" />
     <ClCompile Include="Binar.cpp" />
     <ClCompile Include="ComisVoiajor.cpp" />
     <ClCompile Include="EcuatieAlgebricaInR.cpp" />
@@ -143,6 +144,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AckermannListe.h" />
+    <ClInclude Include="AckermannRecursiv.h" />
     <ClInclude Include="Binar.h" />
     <ClInclude Include="ComisVoiajor.h" />
     <ClInclude Include="EcuatieAlgebricaInR.h" />
