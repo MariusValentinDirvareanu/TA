@@ -14,6 +14,7 @@
 #include "ProdusMatriceParanteze.h"
 #include "Hanoi.h"
 #include "FactorialRecursiv.h"
+#include "FibonacciRecursiv.h"
 
 
 using namespace std;
@@ -179,7 +180,7 @@ int main() {
 				case 2:
 					//
 				{
-
+					FibonacciRecursiv fibonacci;
 				}
 				break;
 
