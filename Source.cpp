@@ -9,12 +9,13 @@
 #include "Binar.h"
 #include "Regine.h"
 #include "ComisVoiajor.h"
+#include "Perspico.h"
 
 
 using namespace std;
 
 int main() {
-	int op, op1, op2, op3, op4, op5, op6;
+	int op, op1, op2, op3, op4, op5, op6, op7, op8;
 
 	do  // reia meniu principal pana la exit
 	{
@@ -26,7 +27,8 @@ int main() {
 		cout << "4. Metoda Divide et Impera" << endl;
 		cout << "5. Metoda Greedy" << endl;
 		cout << "6. Programare dinamica" << endl;
-		// se vor adauga optiuni
+		cout << "7. Metoda 'Ramifica si margineste' (Bound and Branch)" << endl;
+		cout << "8. Algoritmi probabilisti" << endl;
 		cout << "0. Exit program." << endl;
 
 		cout << "Optiune : "; cin >> op;
@@ -314,6 +316,67 @@ int main() {
 
 				}
 			} while (op6 != 0);
+			break;
+
+		case 7:
+			do
+			{
+				cout << endl << "Metoda Bound and Branch" << endl;
+				cout << "7.1. Jocul Perspico" << endl;
+				cout << "7.0. Exit Bound and Branch!" << endl;
+
+				cout << "Bound and Branch : "; cin >> op7;
+
+				switch (op7)
+				{
+				case 1:
+				{
+					Perspico perspico;
+				}
+					break;
+
+				case 0:
+					cout << "A terminat submeniu 7" << endl << endl;
+					break;
+
+				default:
+					cout << "Optiune invalida!" << endl;
+					break;
+
+				}
+			} while (op7 != 0);
+			break;
+
+		case 8:
+			do
+			{
+				cout << endl << "Algoritmi probabilisti" << endl;
+				cout << "8.1. Maximul unei functii" << endl;
+				cout << "8.2. Integrala unei functii" << endl;
+				cout << "8.0. Exit Algoritmi probabilisti !" << endl;
+
+				cout << "Optiune Algoritmi probabilisti : "; cin >> op8;
+
+				switch (op8)
+				{
+				case 1:
+					// Maxim();
+					break;
+
+				case 2:
+					// Integrala()
+					break;
+
+				case 0:
+					cout << "A terminat submeniu 8" << endl << endl;
+					break;
+
+				default:
+					cout << "Optiune invalida!" << endl;
+					break;
+
+				}
+			} while (op8 != 0);
 			break;
 
 		case 0: // end Meniu principal
