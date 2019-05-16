@@ -17,12 +17,22 @@
 #include "FibonacciRecursiv.h"
 #include "FactoriPrimiRecursiv.h"
 #include "AckermannRecursiv.h"
+#include "ProblemaLabirintului.h"
 
 
 using namespace std;
 
 int main() {
-	int op, op1, op2, op3, op4, op5, op6, op7, op8;
+	//int op1, op2, op3, op4, op5, op6, op7, op8;
+	int* op = new int;
+	int* op1 = new int;
+	int* op2 = new int;
+	int* op3 = new int;
+	int* op4 = new int;
+	int* op5 = new int;
+	int* op6 = new int;
+	int* op7 = new int;
+	int* op8 = new int;
 
 	do  // reia meniu principal pana la exit
 	{
@@ -38,9 +48,9 @@ int main() {
 		cout << "8. Algoritmi probabilisti" << endl;
 		cout << "0. Exit program." << endl;
 
-		cout << "Optiune : "; cin >> op;
+		cout << "Optiune : "; cin >> *op;
 
-		switch (op) // switch pentruoptiune meniu principal
+		switch (*op) // switch pentruoptiune meniu principal
 		{
 
 		case 1: //Probleme diverse (laborator 1)
@@ -51,9 +61,9 @@ int main() {
 				cout << "1.2. Rezolvarea aproximativa pentru o ecuatie algebrica in R" << endl;
 				cout << "1.0. Exit probleme diverse!" << endl;
 
-				cout << "Optiune probleme diverse : "; cin >> op1;
+				cout << "Optiune probleme diverse : "; cin >> *op1;
 
-				switch (op1)
+				switch (*op1)
 				{
 				case 1: {
 					Norme norma;
@@ -80,7 +90,7 @@ int main() {
 					break;
 
 				}
-			} while (op1 != 0);
+			} while (*op1 != 0);
 			break;
 
 		case 2: //Backtracking
@@ -97,8 +107,8 @@ int main() {
 				cout << "2.5. Problema parantezelor" << endl;
 				cout << "2.6. Problema comisului voiajor" << endl;
 				cout << "2.0. Exit Backtracking." << endl;
-				cout << "Optiune Backtracking: "; cin >> op2;
-				switch (op2)
+				cout << "Optiune Backtracking: "; cin >> *op2;
+				switch (*op2)
 				{
 				case 1: //permutari
 				{
@@ -148,7 +158,7 @@ int main() {
 					break;
 
 				}
-			} while (op2 != 0);
+			} while (*op2 != 0);
 		}
 		break;
 
@@ -170,8 +180,8 @@ int main() {
 				cout << " 3.0. Exit Recursivitate!" << endl;
 
 
-				cout << "Optiune recursivitate: "; cin >> op3;
-				switch (op3)
+				cout << "Optiune recursivitate: "; cin >> *op3;
+				switch (*op3)
 				{
 				case 1: //
 				{
@@ -206,6 +216,12 @@ int main() {
 				}
 				break;
 
+				case 10:
+				{
+					ProblemaLabirintului labirint;
+				}
+				break;
+
 				case 0:
 					cout << "A terminat submeniu 3" << endl << endl;
 					break;
@@ -215,7 +231,7 @@ int main() {
 					break;
 
 				}
-			} while (op3 != 0);
+			} while (*op3 != 0);
 			break;
 
 		case 4:
@@ -225,9 +241,9 @@ int main() {
 				cout << "4.1. Turnurile din Hanoi" << endl;
 				cout << "4.0. Exit Divide et Impera!" << endl;
 
-				cout << "Optiune probleme diverse : "; cin >> op4;
+				cout << "Optiune probleme diverse : "; cin >> *op4;
 
-				switch (op4)
+				switch (*op4)
 				{
 					case 1:
 					{
@@ -244,7 +260,7 @@ int main() {
 						break;
 
 				}
-			} while (op4 != 0);
+			} while (*op4 != 0);
 			break;
 
 		case 5: //Greedy
@@ -258,9 +274,9 @@ int main() {
 				cout << "5.5. Obtinerea codificarii Fibonacci pentru un numar n dat" << endl;
 				cout << "5.0. Exit Greedy!" << endl;
 
-				cout << "Optiune probleme diverse : "; cin >> op5;
+				cout << "Optiune probleme diverse : "; cin >> *op5;
 
-				switch (op5)
+				switch (*op5)
 				{
 				case 1:
 					// parcugere_cal();
@@ -279,7 +295,7 @@ int main() {
 					break;
 
 				}
-			} while (op5 != 0);
+			} while (*op5 != 0);
 			break;
 
 		case 6: //Progaamare dinamica
@@ -292,9 +308,9 @@ int main() {
 				cout << "6.4. Binar" << endl;
 				cout << "6.0. Exit Divide et Impera!" << endl;
 
-				cout << "Optiune probleme diverse : "; cin >> op6;
+				cout << "Optiune probleme diverse : "; cin >> *op6;
 
-				switch (op6)
+				switch (*op6)
 				{
 				case 1:
 				{
@@ -329,7 +345,7 @@ int main() {
 					break;
 
 				}
-			} while (op6 != 0);
+			} while (*op6 != 0);
 			break;
 
 		case 7:
@@ -339,9 +355,9 @@ int main() {
 				cout << "7.1. Jocul Perspico" << endl;
 				cout << "7.0. Exit Bound and Branch!" << endl;
 
-				cout << "Bound and Branch : "; cin >> op7;
+				cout << "Bound and Branch : "; cin >> *op7;
 
-				switch (op7)
+				switch (*op7)
 				{
 				case 1:
 				{
@@ -358,7 +374,7 @@ int main() {
 					break;
 
 				}
-			} while (op7 != 0);
+			} while (*op7 != 0);
 			break;
 
 		case 8:
@@ -369,9 +385,9 @@ int main() {
 				cout << "8.2. Integrala unei functii" << endl;
 				cout << "8.0. Exit Algoritmi probabilisti !" << endl;
 
-				cout << "Optiune Algoritmi probabilisti : "; cin >> op8;
+				cout << "Optiune Algoritmi probabilisti : "; cin >> *op8;
 
-				switch (op8)
+				switch (*op8)
 				{
 				case 1:
 					// Maxim();
@@ -390,7 +406,7 @@ int main() {
 					break;
 
 				}
-			} while (op8 != 0);
+			} while (*op8 != 0);
 			break;
 
 		case 0: // end Meniu principal
@@ -401,7 +417,7 @@ int main() {
 			cout << "Optiune invalida!" << endl;
 			break;
 		} // end switch op meniu principal
-	} while (op != 0); // end meniu principal
+	} while (*op != 0); // end meniu principal
 
 	return 0;
 }

@@ -136,6 +136,7 @@
     <ClCompile Include="Norme.cpp" />
     <ClCompile Include="PCA.cpp" />
     <ClCompile Include="Perspico.cpp" />
+    <ClCompile Include="ProblemaLabirintului.cpp" />
     <ClCompile Include="ProdusMatriceParanteze.cpp" />
     <ClCompile Include="Regine.cpp" />
     <ClCompile Include="Source.cpp" />
@@ -155,6 +156,7 @@
     <ClInclude Include="Norme.h" />
     <ClInclude Include="PCA.h" />
     <ClInclude Include="Perspico.h" />
+    <ClInclude Include="ProblemaLabirintului.h" />
     <ClInclude Include="ProdusMatriceParanteze.h" />
     <ClInclude Include="Regine.h" />
     <ClInclude Include="SumaTriunghi.h" />
@@ -162,6 +164,7 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="comis.txt" />
+    <Text Include="labirint.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
