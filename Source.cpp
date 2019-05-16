@@ -11,6 +11,7 @@
 #include "ComisVoiajor.h"
 #include "Perspico.h"
 #include "SumaTriunghi.h"
+#include "ProdusMatriceParanteze.h"
 
 
 using namespace std;
@@ -288,7 +289,9 @@ int main() {
 				switch (op6)
 				{
 				case 1:
-					// Parantezare_produs_matrice();
+				{
+					ProdusMatriceParanteze matrice;
+				}
 					break;
 
 				case 2:

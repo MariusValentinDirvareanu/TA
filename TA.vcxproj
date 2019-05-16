@@ -131,6 +131,7 @@
     <ClCompile Include="Norme.cpp" />
     <ClCompile Include="PCA.cpp" />
     <ClCompile Include="Perspico.cpp" />
+    <ClCompile Include="ProdusMatriceParanteze.cpp" />
     <ClCompile Include="Regine.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="SumaTriunghi.cpp" />
@@ -144,6 +145,7 @@
     <ClInclude Include="Norme.h" />
     <ClInclude Include="PCA.h" />
     <ClInclude Include="Perspico.h" />
+    <ClInclude Include="ProdusMatriceParanteze.h" />
     <ClInclude Include="Regine.h" />
     <ClInclude Include="SumaTriunghi.h" />
     <ClInclude Include="VerificareAlfabet.h" />

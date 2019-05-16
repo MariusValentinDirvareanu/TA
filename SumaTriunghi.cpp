@@ -4,6 +4,7 @@
 
 SumaTriunghi::SumaTriunghi()
 {
+	Suma_max_triunghi();
 }
 
 void SumaTriunghi::Suma_max_triunghi()
