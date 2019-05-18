@@ -13,9 +13,9 @@ class EcuatieAlgebricaInR
         EcuatieAlgebricaInR();
         ~EcuatieAlgebricaInR();
         void rezolvare_ecuatie();
+		double f(double);
     protected:
     private:
-        double f(double);
         double df(double);
         double a,b,eps,a0,b0,m;
         double x0,x1,ert;

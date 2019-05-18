@@ -18,6 +18,8 @@
 #include "FactoriPrimiRecursiv.h"
 #include "AckermannRecursiv.h"
 #include "ProblemaLabirintului.h"
+#include "CalSah.h"
+#include "MaximFunctie.h"
 
 
 using namespace std;
@@ -50,7 +52,7 @@ int main() {
 
 		cout << "Optiune : "; cin >> *op;
 
-		switch (*op) // switch pentruoptiune meniu principal
+		switch (*op) // switch pentru optiune meniu principal
 		{
 
 		case 1: //Probleme diverse (laborator 1)
@@ -137,7 +139,6 @@ int main() {
 				break;
 
 				case 4:
-					// Combinari
 				{
 					Regine* reg = new Regine;
 					//Regine reg;
@@ -148,7 +149,7 @@ int main() {
 				case 6: {
 					ComisVoiajor* comis = new ComisVoiajor;
 				}
-						break;
+				break;
 
 				case 0:
 					cout << "A terminat submeniu Backtracking" << endl << endl;
@@ -271,7 +272,7 @@ int main() {
 				cout << "5.1. Parcurgere tabla de sah nxn cu saritura cal" << endl;
 				cout << "5.2. Plata unei daca numarul de bancnote este nelimitat" << endl;
 				cout << "5.3. Plata unei daca numarul de bancnote este limitat" << endl;
-				cout << "5.4. Interclasarea a k siruir de numere ordonate crescator" << endl;
+				cout << "5.4. Interclasarea a k siruri de numere ordonate crescator" << endl;
 				cout << "5.5. Obtinerea codificarii Fibonacci pentru un numar n dat" << endl;
 				cout << "5.0. Exit Greedy!" << endl;
 
@@ -280,7 +281,9 @@ int main() {
 				switch (*op5)
 				{
 				case 1:
-					// parcugere_cal();
+				{
+					CalSah* cal = new CalSah;
+				}
 					break;
 
 				case 2:
@@ -391,7 +394,9 @@ int main() {
 				switch (*op8)
 				{
 				case 1:
-					// Maxim();
+				{
+					MaximFunctie* maxim = new MaximFunctie;
+				}
 					break;
 
 				case 2:

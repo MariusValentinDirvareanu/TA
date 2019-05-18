@@ -69,6 +69,12 @@
     <ClCompile Include="ProblemaLabirintului.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CalSah.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MaximFunctie.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="VerificareAlfabet.h">
@@ -120,6 +126,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ProblemaLabirintului.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CalSah.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MaximFunctie.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

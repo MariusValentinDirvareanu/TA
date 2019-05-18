@@ -32,7 +32,7 @@ Binar::Binar(int n) {
 		U = B2;
 		bin(0);
 		bin(1);
-		print(B1);
+		//print(B1);
 		print(B2);
 		B1 = B2;
 	}
