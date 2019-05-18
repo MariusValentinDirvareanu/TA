@@ -127,6 +127,7 @@
   <ItemGroup>
     <ClCompile Include="AckermannListe.cpp" />
     <ClCompile Include="AckermannRecursiv.cpp" />
+    <ClCompile Include="BancnoteNelimitate.cpp" />
     <ClCompile Include="Binar.cpp" />
     <ClCompile Include="CalSah.cpp" />
     <ClCompile Include="ComisVoiajor.cpp" />
@@ -150,6 +151,7 @@
   <ItemGroup>
     <ClInclude Include="AckermannListe.h" />
     <ClInclude Include="AckermannRecursiv.h" />
+    <ClInclude Include="BancnoteNelimitate.h" />
     <ClInclude Include="Binar.h" />
     <ClInclude Include="CalSah.h" />
     <ClInclude Include="ComisVoiajor.h" />

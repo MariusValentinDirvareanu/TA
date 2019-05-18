@@ -21,6 +21,7 @@
 #include "CalSah.h"
 #include "MaximFunctie.h"
 #include "Submultimi.h"
+#include "BancnoteNelimitate.h"
 
 
 using namespace std;
@@ -293,7 +294,9 @@ int main() {
 				}
 					break;
 
-				case 2:
+				case 2: {
+					BancnoteNelimitate* bancnote = new BancnoteNelimitate;
+				}
 
 					break;
 
