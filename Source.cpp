@@ -20,6 +20,7 @@
 #include "ProblemaLabirintului.h"
 #include "CalSah.h"
 #include "MaximFunctie.h"
+#include "Submultimi.h"
 
 
 using namespace std;
@@ -209,6 +210,12 @@ int main() {
 				{
 					AckermannListe ac(3, 2);
 					
+				}
+				break;
+
+				case 5:
+				{
+					Submultimi* sub = new Submultimi;
 				}
 				break;
 
