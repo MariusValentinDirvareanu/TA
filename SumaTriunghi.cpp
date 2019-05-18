@@ -29,12 +29,12 @@ void SumaTriunghi::Suma_max_triunghi()
 						c[i][j] = t[i][j] + c[i + 1][j];
 						drum[i][j] = i;
 					}
-			std::cout << "suma maxima=" << c[1][1] << std::endl;
+			std::cout << "suma maxima=" << c[1][1] << '\n';
 			i = 1;
 			j = 1;
 			while (i <= n)
 			{
-				std::cout << t[i][j] << std::endl;
+				std::cout << t[i][j] << '\n';
 				j = drum[i][j];
 				i++;
 			}

@@ -5,7 +5,7 @@ Norme::Norme()
     //ctor
 }
 
-void Norme::normaUnuMatrici(vector<vector<double>> mat){
+void Norme::normaUnuMatrici(std::vector<std::vector<double>> mat){
     norm=0,sum=0;
     for(int i=0;i<static_cast<int>(mat.size());++i){
         for(int j=0;j<static_cast<int>(mat.size());++j){
@@ -16,10 +16,10 @@ void Norme::normaUnuMatrici(vector<vector<double>> mat){
         }
         sum=0;
     }
-    cout << "Norma 1 este : " << norm << endl;
+    std::cout << "Norma 1 este : " << norm << '\n';
 }
 
-void Norme::normaInfinitMatrici(vector<vector<double>> mat){
+void Norme::normaInfinitMatrici(std::vector<std::vector<double>> mat){
     norm=0,sum=0;
     for(int i=0;i<static_cast<int>(mat.size());++i){
         for(int j=0;j<static_cast<int>(mat.size());++j){
@@ -30,10 +30,10 @@ void Norme::normaInfinitMatrici(vector<vector<double>> mat){
         }
         sum=0;
     }
-    cout << "Norma infinit este : " << norm << endl;
+    std::cout << "Norma infinit este : " << norm << '\n';
 }
 
-void Norme::normaDoiMatrici(vector<vector<double>> mat){
+void Norme::normaDoiMatrici(std::vector<std::vector<double>> mat){
     norm=0,sum=0;
     for(int i=0;i<static_cast<int>(mat.size());++i){
         for(int j=0;j<static_cast<int>(mat.size());++j){
@@ -41,7 +41,7 @@ void Norme::normaDoiMatrici(vector<vector<double>> mat){
         }
     }
     norm=sqrt(sum);
-    cout << "Norma doi este : " << norm << endl;
+    std::cout << "Norma doi este : " << norm << '\n';
 }
 
 Norme::~Norme()

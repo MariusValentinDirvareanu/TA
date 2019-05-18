@@ -13,9 +13,9 @@ double MaximFunctie::Maxim()
 	do
 	{
 		c1 = rand(); // rand() = alege un numar intre 0 si cel mai mare intreg RAND_MAX=32767
-		cout << "c1 = " << c1 << endl;
+		std::cout << "c1 = " << c1 << '\n';
 		c = a + (c1 - (b - a) * (int(double(c1) / (b - a))));
-		cout << "c= " << c << endl;
+		std::cout << "c= " << c << '\n';
 		if (maximf < f(c)) {
 			maximf = f(c);
 		}

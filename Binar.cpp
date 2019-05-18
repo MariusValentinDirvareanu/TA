@@ -55,17 +55,17 @@ void Binar::bin(int factor) {
 
 void Binar::print(lista* B) {
 	if (!B) {
-		cout << "Lista vida\n";
+		std::cout << "Lista vida\n";
 	}
 	else {
 		C = B;
 		while (C) {
 			q = C->v;
 			while (q) {
-				cout << q->val;
+				std::cout << q->val;
 				q = q->next;
 			}
-			cout << '\n';
+			std::cout << '\n';
 			C = C->urm;
 		}
 	}

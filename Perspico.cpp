@@ -43,7 +43,7 @@ int Perspico::S(int C[5][5])
 		}
 	if ((l + c) % 2 == 1)
 		suma = suma + 1;
-	std::cout << std::endl;
+	std::cout << '\n';
 	return suma;
 }
 
@@ -60,7 +60,7 @@ int Perspico::costC(int C[5][5])
 				cost++;
 			k++;
 		}
-	//std::cout<<"cost="<<cost<<std::endl;
+	//std::cout<<"cost="<<cost<<'\n';
 	return cost;
 }
 
@@ -105,9 +105,9 @@ void Perspico::parcurge_lista2(config * cap)
 		{
 			for (j = 1; j <= 4; j++)
 				printf("%2d ", q->C[i][j]);
-			std::cout << std::endl;
+			std::cout << '\n';
 		}
-		std::cout << std::endl;
+		std::cout << '\n';
 		q = q->urm;
 	}
 }
@@ -134,11 +134,11 @@ void Perspico::PerspicoRez()
 	{
 		for (j = 1; j <= 4; j++)
 			printf("%2d ", C0[i][j]);
-		std::cout << std::endl;
+		std::cout << '\n';
 	}
 	// Se poate verifica calculand S(C0) daca exista solutie  pentru a ajunge in configuratia finala
 	// adica, daca S(C0) este numar par
-	std::cout << "S(C0) = " << S(C0) << std::endl;
+	std::cout << "S(C0) = " << S(C0) << '\n';
 	if (S(C0) % 2 == 1)
 	{
 		std::cout << "Nu exista solutie pentru configuratia data\n";
@@ -162,7 +162,7 @@ void Perspico::PerspicoRez()
 		{
 			for (j = 1; j <= 4; j++)
 				std::cout << (inchisa->C)[i][j] << " ";
-			std::cout << std::endl;
+			std::cout << '\n';
 		}
 
 		// initializam lista deschisa expandand capatul listei inchise;
@@ -212,10 +212,10 @@ void Perspico::PerspicoRez()
 		// completeaza lista inchisa cu configuratii cu costuri din ce in ce mai mici;
 		std::cout << "Lista inchisa este\n";
 		parcurge_lista2(inchisa);
-		std::cout << std::endl;
+		std::cout << '\n';
 		std::cout << "Lista deschisa este\n";
 		parcurge_lista2(deschisa);
-		std::cout << std::endl;
+		std::cout << '\n';
 		while ((!compara_final(ultim_i->C)) && (deschisa))
 		{
 			// ultim_i din lista inchisa este diferit de configuratia finala si in lista deschisa mai sunt elemente
@@ -232,7 +232,7 @@ void Perspico::PerspicoRez()
 				}
 				q = q->urm;
 			}
-			std::cout << "cmin= " << cmin << std::endl;
+			std::cout << "cmin= " << cmin << '\n';
 			// adauga a in lista inchisa
 			config* b = a;
 			a->urm = nullptr;
@@ -241,7 +241,7 @@ void Perspico::PerspicoRez()
 
 			std::cout << "Lista inchisa este\n";
 			parcurge_lista2(inchisa);
-			std::cout << std::endl;
+			std::cout << '\n';
 			// !!! trebuie sters b din lista deschisa si refacute legaturile ????
 			if (b == deschisa)
 			{
@@ -267,10 +267,10 @@ void Perspico::PerspicoRez()
 
 			std::cout << "Lista inchisa este\n";
 			parcurge_lista2(inchisa);
-			std::cout << std::endl;
+			std::cout << '\n';
 			std::cout << "Lista deschisa este\n";
 			parcurge_lista2(deschisa);
-			std::cout << std::endl;
+			std::cout << '\n';
 
 			// !!!
 
@@ -335,10 +335,10 @@ void Perspico::PerspicoRez()
 
 			std::cout << "Lista inchisa este\n";
 			parcurge_lista2(inchisa);
-			std::cout << std::endl;
+			std::cout << '\n';
 			std::cout << "Lista deschisa este\n";
 			parcurge_lista2(deschisa);
-			std::cout << std::endl;
+			std::cout << '\n';
 
 		}
 		if (compara_final(ultim_i->C))

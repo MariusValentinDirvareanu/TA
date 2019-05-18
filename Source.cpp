@@ -24,8 +24,6 @@
 #include "BancnoteNelimitate.h"
 
 
-using namespace std;
-
 int main() {
 	//int op1, op2, op3, op4, op5, op6, op7, op8;
 	int* op = new int;
@@ -41,18 +39,18 @@ int main() {
 	do  // reia meniu principal pana la exit
 	{
 		// meniu principal
-		cout << "PROGRAME TA " << endl;
-		cout << "1. Probleme diverse" << endl;
-		cout << "2. Backtracking" << endl;
-		cout << "3. Metoda recursiva" << endl;
-		cout << "4. Metoda Divide et Impera" << endl;
-		cout << "5. Metoda Greedy" << endl;
-		cout << "6. Programare dinamica" << endl;
-		cout << "7. Metoda 'Ramifica si margineste' (Bound and Branch)" << endl;
-		cout << "8. Algoritmi probabilisti" << endl;
-		cout << "0. Exit program." << endl;
+		std::cout << "PROGRAME TA " << '\n';
+		std::cout << "1. Probleme diverse" << '\n';
+		std::cout << "2. Backtracking" << '\n';
+		std::cout << "3. Metoda recursiva" << '\n';
+		std::cout << "4. Metoda Divide et Impera" << '\n';
+		std::cout << "5. Metoda Greedy" << '\n';
+		std::cout << "6. Programare dinamica" << '\n';
+		std::cout << "7. Metoda 'Ramifica si margineste' (Bound and Branch)" << '\n';
+		std::cout << "8. Algoritmi probabilisti" << '\n';
+		std::cout << "0. Exit program." << '\n';
 
-		cout << "Optiune : "; cin >> *op;
+		std::cout << "Optiune : "; std::cin >> *op;
 
 		switch (*op) // switch pentru optiune meniu principal
 		{
@@ -60,18 +58,18 @@ int main() {
 		case 1: //Probleme diverse (laborator 1)
 			do
 			{
-				cout << endl << "Probleme diverse" << endl;
-				cout << "1.1. Calculul unor norme matriciale" << endl;
-				cout << "1.2. Rezolvarea aproximativa pentru o ecuatie algebrica in R" << endl;
-				cout << "1.0. Exit probleme diverse!" << endl;
+				std::cout << '\n' << "Probleme diverse" << '\n';
+				std::cout << "1.1. Calculul unor norme matriciale" << '\n';
+				std::cout << "1.2. Rezolvarea aproximativa pentru o ecuatie algebrica in R" << '\n';
+				std::cout << "1.0. Exit probleme diverse!" << '\n';
 
-				cout << "Optiune probleme diverse : "; cin >> *op1;
+				std::cout << "Optiune probleme diverse : "; std::cin >> *op1;
 
 				switch (*op1)
 				{
 				case 1: {
 					Norme* norma = new Norme;
-					vector<vector<double>> A = { {3,5},{2,1} };
+					std::vector<std::vector<double>> A = { {3,5},{2,1} };
 					norma->normaUnuMatrici(A);
 					norma->normaInfinitMatrici(A);
 					norma->normaDoiMatrici(A); 
@@ -86,11 +84,11 @@ int main() {
 					break;
 
 				case 0:
-					cout << "A terminat submeniu 1" << endl << endl;
+					std::cout << "A terminat submeniu 1" << '\n' << '\n';
 					break;
 
 				default:
-					cout << "Optiune invalida!" << endl;
+					std::cout << "Optiune invalida!" << '\n';
 					break;
 
 				}
@@ -103,15 +101,15 @@ int main() {
 
 			do
 			{
-				cout << endl << "Backtracking" << endl;
-				cout << "2.1. Generarea permutarilor " << endl;
-				cout << "2.2. Generarea combinarilor " << endl;
-				cout << "2.3. Generarea aranjamentelor " << endl;
-				cout << "2.4. Problema reginelor" << endl;
-				cout << "2.5. Problema parantezelor" << endl;
-				cout << "2.6. Problema comisului voiajor" << endl;
-				cout << "2.0. Exit Backtracking." << endl;
-				cout << "Optiune Backtracking: "; cin >> *op2;
+				std::cout << '\n' << "Backtracking" << '\n';
+				std::cout << "2.1. Generarea permutarilor " << '\n';
+				std::cout << "2.2. Generarea combinarilor " << '\n';
+				std::cout << "2.3. Generarea aranjamentelor " << '\n';
+				std::cout << "2.4. Problema reginelor" << '\n';
+				std::cout << "2.5. Problema parantezelor" << '\n';
+				std::cout << "2.6. Problema comisului voiajor" << '\n';
+				std::cout << "2.0. Exit Backtracking." << '\n';
+				std::cout << "Optiune Backtracking: "; std::cin >> *op2;
 				switch (*op2)
 				{
 				case 1: //permutari
@@ -154,11 +152,11 @@ int main() {
 				break;
 
 				case 0:
-					cout << "A terminat submeniu Backtracking" << endl << endl;
+					std::cout << "A terminat submeniu Backtracking" << '\n' << '\n';
 					break;
 
 				default:
-					cout << "Optiune invalida!" << endl;
+					std::cout << "Optiune invalida!" << '\n';
 					break;
 
 				}
@@ -169,22 +167,22 @@ int main() {
 		case 3: //Recursivitate
 			do
 			{
-				cout << endl << "Recursivitate" << endl;
-				cout << " 3.1. Calculul factorialului" << endl;
-				cout << " 3.2. Calculul sirului Fibonacci" << endl;
-				cout << " 3.3. Functia Ackermann - recursiv " << endl;
-				cout << " 3.4. Functia Ackermann - iterativ cu vector sau lista" << endl;
-				cout << " 3.5. Calculul numarului de partitii cu k submultimi " << endl;
-				cout << "        ale unei multimi cu n elemente " << endl;
-				cout << " 3.6. Determinare permutari de n - recursiv" << endl;
-				cout << " 3.7. Problema reginelor - recursiv" << endl;
-				cout << " 3.8. Descompunere in factori -  recursiv" << endl;
-				cout << " 3.9. Recursivitate indirecta: miscare pe ecran" << endl;
-				cout << "3.10. Problema labirintului" << endl;
-				cout << " 3.0. Exit Recursivitate!" << endl;
+				std::cout << '\n' << "Recursivitate" << '\n';
+				std::cout << " 3.1. Calculul factorialului" << '\n';
+				std::cout << " 3.2. Calculul sirului Fibonacci" << '\n';
+				std::cout << " 3.3. Functia Ackermann - recursiv " << '\n';
+				std::cout << " 3.4. Functia Ackermann - iterativ cu vector sau lista" << '\n';
+				std::cout << " 3.5. Calculul numarului de partitii cu k submultimi " << '\n';
+				std::cout << "        ale unei multimi cu n elemente " << '\n';
+				std::cout << " 3.6. Determinare permutari de n - recursiv" << '\n';
+				std::cout << " 3.7. Problema reginelor - recursiv" << '\n';
+				std::cout << " 3.8. Descompunere in factori -  recursiv" << '\n';
+				std::cout << " 3.9. Recursivitate indirecta: miscare pe ecran" << '\n';
+				std::cout << "3.10. Problema labirintului" << '\n';
+				std::cout << " 3.0. Exit Recursivitate!" << '\n';
 
 
-				cout << "Optiune recursivitate: "; cin >> *op3;
+				std::cout << "Optiune recursivitate: "; std::cin >> *op3;
 				switch (*op3)
 				{
 				case 1: //
@@ -233,11 +231,11 @@ int main() {
 				break;
 
 				case 0:
-					cout << "A terminat submeniu 3" << endl << endl;
+					std::cout << "A terminat submeniu 3" << '\n' << '\n';
 					break;
 
 				default:
-					cout << "Optiune invalida!" << endl;
+					std::cout << "Optiune invalida!" << '\n';
 					break;
 
 				}
@@ -247,11 +245,11 @@ int main() {
 		case 4:
 			do
 			{
-				cout << endl << "Metoda Divide et Impera" << endl;
-				cout << "4.1. Turnurile din Hanoi" << endl;
-				cout << "4.0. Exit Divide et Impera!" << endl;
+				std::cout << '\n' << "Metoda Divide et Impera" << '\n';
+				std::cout << "4.1. Turnurile din Hanoi" << '\n';
+				std::cout << "4.0. Exit Divide et Impera!" << '\n';
 
-				cout << "Optiune probleme diverse : "; cin >> *op4;
+				std::cout << "Optiune probleme diverse : "; std::cin >> *op4;
 
 				switch (*op4)
 				{
@@ -262,11 +260,11 @@ int main() {
 						break;
 
 					case 0:
-						cout << "A terminat submeniu 4" << endl << endl;
+						std::cout << "A terminat submeniu 4" << '\n' << '\n';
 						break;
 
 					default:
-						cout << "Optiune invalida!" << endl;
+						std::cout << "Optiune invalida!" << '\n';
 						break;
 
 				}
@@ -276,15 +274,15 @@ int main() {
 		case 5: //Greedy
 			do
 			{
-				cout << endl << "Metoda Greedy" << endl;
-				cout << "5.1. Parcurgere tabla de sah nxn cu saritura cal" << endl;
-				cout << "5.2. Plata unei daca numarul de bancnote este nelimitat" << endl;
-				cout << "5.3. Plata unei daca numarul de bancnote este limitat" << endl;
-				cout << "5.4. Interclasarea a k siruri de numere ordonate crescator" << endl;
-				cout << "5.5. Obtinerea codificarii Fibonacci pentru un numar n dat" << endl;
-				cout << "5.0. Exit Greedy!" << endl;
+				std::cout << '\n' << "Metoda Greedy" << '\n';
+				std::cout << "5.1. Parcurgere tabla de sah nxn cu saritura cal" << '\n';
+				std::cout << "5.2. Plata unei daca numarul de bancnote este nelimitat" << '\n';
+				std::cout << "5.3. Plata unei daca numarul de bancnote este limitat" << '\n';
+				std::cout << "5.4. Interclasarea a k siruri de numere ordonate crescator" << '\n';
+				std::cout << "5.5. Obtinerea codificarii Fibonacci pentru un numar n dat" << '\n';
+				std::cout << "5.0. Exit Greedy!" << '\n';
 
-				cout << "Optiune probleme diverse : "; cin >> *op5;
+				std::cout << "Optiune probleme diverse : "; std::cin >> *op5;
 
 				switch (*op5)
 				{
@@ -301,11 +299,11 @@ int main() {
 					break;
 
 				case 0:
-					cout << "A terminat submeniu 5" << endl << endl;
+					std::cout << "A terminat submeniu 5" << '\n' << '\n';
 					break;
 
 				default:
-					cout << "Optiune invalida!" << endl;
+					std::cout << "Optiune invalida!" << '\n';
 					break;
 
 				}
@@ -315,14 +313,14 @@ int main() {
 		case 6: //Progaamare dinamica
 			do
 			{
-				cout << endl << "Programare dinamica" << endl;
-				cout << "6.1. Parantezarea produsului de matrice cu numar minim de inmultiri" << endl;
-				cout << "6.2. Determinarea sumei maxime intr-un triunghi de numere" << endl;
-				cout << "6.3. Verificare cuvant in alfabet" << endl;
-				cout << "6.4. Binar" << endl;
-				cout << "6.0. Exit Divide et Impera!" << endl;
+				std::cout << '\n' << "Programare dinamica" << '\n';
+				std::cout << "6.1. Parantezarea produsului de matrice cu numar minim de inmultiri" << '\n';
+				std::cout << "6.2. Determinarea sumei maxime intr-un triunghi de numere" << '\n';
+				std::cout << "6.3. Verificare cuvant in alfabet" << '\n';
+				std::cout << "6.4. Binar" << '\n';
+				std::cout << "6.0. Exit Divide et Impera!" << '\n';
 
-				cout << "Optiune probleme diverse : "; cin >> *op6;
+				std::cout << "Optiune probleme diverse : "; std::cin >> *op6;
 
 				switch (*op6)
 				{
@@ -351,11 +349,11 @@ int main() {
 				break;
 
 				case 0:
-					cout << "A terminat submeniu 6" << endl << endl;
+					std::cout << "A terminat submeniu 6" << '\n' << '\n';
 					break;
 
 				default:
-					cout << "Optiune invalida!" << endl;
+					std::cout << "Optiune invalida!" << '\n';
 					break;
 
 				}
@@ -365,11 +363,11 @@ int main() {
 		case 7:
 			do
 			{
-				cout << endl << "Metoda Bound and Branch" << endl;
-				cout << "7.1. Jocul Perspico" << endl;
-				cout << "7.0. Exit Bound and Branch!" << endl;
+				std::cout << '\n' << "Metoda Bound and Branch" << '\n';
+				std::cout << "7.1. Jocul Perspico" << '\n';
+				std::cout << "7.0. Exit Bound and Branch!" << '\n';
 
-				cout << "Bound and Branch : "; cin >> *op7;
+				std::cout << "Bound and Branch : "; std::cin >> *op7;
 
 				switch (*op7)
 				{
@@ -380,11 +378,11 @@ int main() {
 					break;
 
 				case 0:
-					cout << "A terminat submeniu 7" << endl << endl;
+					std::cout << "A terminat submeniu 7" << '\n' << '\n';
 					break;
 
 				default:
-					cout << "Optiune invalida!" << endl;
+					std::cout << "Optiune invalida!" << '\n';
 					break;
 
 				}
@@ -394,12 +392,12 @@ int main() {
 		case 8:
 			do
 			{
-				cout << endl << "Algoritmi probabilisti" << endl;
-				cout << "8.1. Maximul unei functii" << endl;
-				cout << "8.2. Integrala unei functii" << endl;
-				cout << "8.0. Exit Algoritmi probabilisti !" << endl;
+				std::cout << '\n' << "Algoritmi probabilisti" << '\n';
+				std::cout << "8.1. Maximul unei functii" << '\n';
+				std::cout << "8.2. Integrala unei functii" << '\n';
+				std::cout << "8.0. Exit Algoritmi probabilisti !" << '\n';
 
-				cout << "Optiune Algoritmi probabilisti : "; cin >> *op8;
+				std::cout << "Optiune Algoritmi probabilisti : "; std::cin >> *op8;
 
 				switch (*op8)
 				{
@@ -414,11 +412,11 @@ int main() {
 					break;
 
 				case 0:
-					cout << "A terminat submeniu 8" << endl << endl;
+					std::cout << "A terminat submeniu 8" << '\n' << '\n';
 					break;
 
 				default:
-					cout << "Optiune invalida!" << endl;
+					std::cout << "Optiune invalida!" << '\n';
 					break;
 
 				}
@@ -426,11 +424,11 @@ int main() {
 			break;
 
 		case 0: // end Meniu principal
-			cout << "Bye! Bye!" << endl;
+			std::cout << "Bye! Bye!" << '\n';
 			break;
 
 		default:
-			cout << "Optiune invalida!" << endl;
+			std::cout << "Optiune invalida!" << '\n';
 			break;
 		} // end switch op meniu principal
 	} while (*op != 0); // end meniu principal

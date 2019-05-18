@@ -7,7 +7,7 @@ AckermannListe::AckermannListe() {
 
 AckermannListe::AckermannListe(int m, int n)
 {
-	cout << "ac(" << m << "," << n << ") = " << Ackermann_liste(m, n) << '\n';
+	std::cout << "ac(" << m << "," << n << ") = " << Ackermann_liste(m, n) << '\n';
 }
 
 // pentru functia Ackermann
@@ -16,16 +16,16 @@ void AckermannListe::parcurgere_lista(v* p, v* u)
 {
 	v* q;
 	if (p == nullptr)
-		cout << "Lista este vida!" << endl;
+		std::cout << "Lista este vida!" << '\n';
 	else
 	{
 		q = p;
 		while (q != nullptr)
 		{
-			cout << q->val << " ";
+			std::cout << q->val << " ";
 			q = q->urm;
 		}
-		cout << endl;
+		std::cout << '\n';
 	}
 }
 

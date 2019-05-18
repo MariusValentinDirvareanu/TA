@@ -20,12 +20,12 @@ double EcuatieAlgebricaInR::df(double x)
 void EcuatieAlgebricaInR::rezolvare_ecuatie()
 {
  // Metoda bisectiei
- cout<<" a= "; cin>>a;
- cout<<" b= "; cin>>b;
- cout<<" eps= "; cin>>eps;
+ std::cout<<" a= "; std::cin>>a;
+ std::cout<<" b= "; std::cin>>b;
+ std::cout<<" eps= "; std::cin>>eps;
 
- cout<<"Iteratia"<<"  Aprox. cu metoda bisectiei "<<" Metoda tangentei " << "Metoda secantei\n";
- cout<<"____________________________________________________________________________________\n";
+ std::cout<<"Iteratia"<<"  Aprox. cu metoda bisectiei "<<" Metoda tangentei " << "Metoda secantei\n";
+ std::cout<<"____________________________________________________________________________________\n";
 
  // initializare metoda bisectiei;
  a0=a; b0=b;
@@ -35,7 +35,7 @@ void EcuatieAlgebricaInR::rezolvare_ecuatie()
  alfa=a;
  beta=b;
  x2=a;
- // cout<<nrit<<"   [ "<<a0<<" , "<<b0<<" ]    "<<x0<<endl;
+ // std::cout<<nrit<<"   [ "<<a0<<" , "<<b0<<" ]    "<<x0<<'\n';
  printf("%4d      [ %10.9f , %10.9f ]     %10.9f   %10.9f\n", nrit,a0,b0,x0,x2);
 
 
@@ -44,7 +44,7 @@ void EcuatieAlgebricaInR::rezolvare_ecuatie()
     // calcule pentru metoda bisectiei
     m=(a0+b0)/2;
     if (f(m)==0){
-        cout<<"Solutia este "<<m;
+        std::cout<<"Solutia este "<<m;
         break;
     }
     else {
@@ -77,8 +77,8 @@ void EcuatieAlgebricaInR::rezolvare_ecuatie()
     printf("%4d      [ %10.9f , %10.9f ]     %10.9f   %10.9f\n", nrit,a0,b0,x0,x2);
     }while(((b0-a0)>=eps) || (ert>eps) || (beta-alfa)/2>=eps);
 
-cout<<"Solutia se afla in intervalul ["<<a0<<","<<b0<<"]\n";
-cout<<" si poate fi aproximata prin valoarea "<<(a0+b0)/2;
+std::cout<<"Solutia se afla in intervalul ["<<a0<<","<<b0<<"]\n";
+std::cout<<" si poate fi aproximata prin valoarea "<<(a0+b0)/2;
 
 }
 

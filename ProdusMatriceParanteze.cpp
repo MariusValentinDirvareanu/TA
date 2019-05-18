@@ -62,7 +62,7 @@ void ProdusMatriceParanteze::matrice_parantezare()
 		std::cout << "p[" << ii << "]= "; std::cin >> p[ii];
 	}
 	produs_M(n, p, M);
-	std::cout << M[1][n] << std::endl;
+	std::cout << M[1][n] << '\n';
 	produs_parantezare(1, n, M);
 }
 

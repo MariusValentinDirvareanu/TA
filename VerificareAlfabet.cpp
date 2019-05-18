@@ -13,7 +13,7 @@ void VerificareAlfabet::verificare_alfabet()
 
 	// Verificare ca in x doar caractere din alfabet, adica numere de la 1 la m
 
-	cout << "Valoarea cuvant y="; cin >> y;
+	std::cout << "Valoarea cuvant y="; std::cin >> y;
 
 	CompletareStraturi();
 	StraturiMatrice();
@@ -23,30 +23,30 @@ void VerificareAlfabet::verificare_alfabet()
 
 void VerificareAlfabet::VerificareCompunere()
 {
-	cout << "Pentru x = ";
+	std::cout << "Pentru x = ";
 	for (i = 1; i <= n; i++)
-		cout << x[i] << " ";
+		std::cout << x[i] << " ";
 	if (A[1][n][y] == 1)
 	{
-		cout << "  exista compunere astfel incat sa obtinem y = " << y << endl;
+		std::cout << "  exista compunere astfel incat sa obtinem y = " << y << '\n';
 		// TEMA: Scrieti parantezarea la fel ca la produsul de matrice
 	}
 	else
-		cout << "  NU exista compunere astfel incat sa obtinem y = " << y << endl;
+		std::cout << "  NU exista compunere astfel incat sa obtinem y = " << y << '\n';
 }
 
 void VerificareAlfabet::CitireDate()
 {
 	// citim datele
-	cout << "Numarul de litere in alfabet m="; cin >> m;
-	cout << "Citeste legea de compozitie (adica, matricea M)\n";
+	std::cout << "Numarul de litere in alfabet m="; std::cin >> m;
+	std::cout << "Citeste legea de compozitie (adica, matricea M)\n";
 	for (i = 1; i <= m; i++)
 		for (j = 1; j <= m; j++)
-			cin >> M.at(i).at(j);
-	cout << "Numarul de litere din cuvant n="; cin >> n;
-	cout << "Citeste cuvantul (adica, vectorul x)\n";
+			std::cin >> M.at(i).at(j);
+	std::cout << "Numarul de litere din cuvant n="; std::cin >> n;
+	std::cout << "Citeste cuvantul (adica, vectorul x)\n";
 	for (i = 1; i <= n; i++)
-		cin >> x.at(i);
+		std::cin >> x.at(i);
 }
 
 void VerificareAlfabet::CompletareStraturi()
@@ -82,12 +82,12 @@ void VerificareAlfabet::StraturiMatrice()
 	// Scrie matricele straturi
 	for (a = 1; a <= m; a++)
 	{
-		cout << "Stratul a = " << a << " este \n";
+		std::cout << "Stratul a = " << a << " este \n";
 		for (i = 1; i <= n; i++)
 		{
 			for (j = 1; j <= n; j++)
-				cout << A[i][j][a] << " ";
-			cout << '\n';
+				std::cout << A[i][j][a] << " ";
+			std::cout << '\n';
 		}
 	}
 }

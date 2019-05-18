@@ -5,7 +5,7 @@
 #include <cmath>
 #include <vector>
 
-using namespace std;
+
 
 
 class PCA
@@ -19,7 +19,7 @@ class PCA
     private:
         int validarep(int);
         int v,k,j,contor;
-        vector<int> x;
+        std::vector<int> x;
         //vector<int>::iterator p;
 };
 

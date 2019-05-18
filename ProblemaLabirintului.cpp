@@ -58,13 +58,13 @@ void ProblemaLabirintului::Rezolvare(int i, int j, int pas)
 	{
 		for (int k = 0; k < directii; k++)
 		{
-			int i_vecin = i + di[k];
-			int j_vecin = j + dj[k];
-			if (isOK(i_vecin, j_vecin))
+			int i_i = i + di[k];
+			int j_j = j + dj[k];
+			if (isOK(i_i, j_j))
 			{
-				matrice[i_vecin][j_vecin] = pas;
-				Rezolvare(i_vecin, j_vecin, pas + 1);
-				matrice[i_vecin][j_vecin] = 0;
+				matrice[i_i][j_j] = pas;
+				Rezolvare(i_i, j_j, pas + 1);
+				matrice[i_i][j_j] = 0;
 			}
 		}
 	}

@@ -6,16 +6,16 @@
 #include <cmath>
 #include <vector>
 
-using namespace std;
+
 
 class Norme
 {
     public:
         Norme();
         ~Norme();
-        void normaUnuMatrici(vector<vector<double>>);
-        void normaInfinitMatrici(vector<vector<double>>);
-        void normaDoiMatrici(vector<vector<double>>);
+        void normaUnuMatrici(std::vector<std::vector<double>>);
+        void normaInfinitMatrici(std::vector<std::vector<double>>);
+        void normaDoiMatrici(std::vector<std::vector<double>>);
     private:
         double norm,sum;
 };

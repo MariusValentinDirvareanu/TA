@@ -2,7 +2,7 @@
 #include <iostream>
 #include <vector>
 
-using namespace std;
+
 
 
 class VerificareAlfabet
@@ -22,8 +22,8 @@ public:
 
 private:
 	int m, n, i, j, k, a, l1, l2, y;
-	vector<int> x;
-	vector<vector<int>> M;
+	std::vector<int> x;
+	std::vector<std::vector<int>> M;
 	int A[30][30][10] = { 0 };
 };
 

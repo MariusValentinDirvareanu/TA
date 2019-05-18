@@ -33,9 +33,9 @@ void PCA::permutari(int n){
         else{
             if(k==n){
                 for(j=1;j<=n;++j){
-                    cout << x.at(j) << ' ';
+                    std::cout << x.at(j) << ' ';
                 }
-                cout << '\n';
+                std::cout << '\n';
                 contor++;
             }
             else{
@@ -66,9 +66,9 @@ void PCA::combinari(int n, int m){
         else{
             if(k==m){
                 for(j=1;j<=m;++j){
-                    cout << x.at(j) << ' ';
+                    std::cout << x.at(j) << ' ';
                 }
-                cout << '\n';
+                std::cout << '\n';
                 contor++;
             }
             else{
@@ -99,9 +99,9 @@ void PCA::aranjamente(int n, int m){
         else{
             if(k==m){
                 for(j=1;j<=m;++j){
-                    cout << x.at(j) << ' ';
+                    std::cout << x.at(j) << ' ';
                 }
-                cout << '\n';
+                std::cout << '\n';
                 contor++;
             }
             else{
