@@ -81,6 +81,9 @@
     <ClCompile Include="BancnoteNelimitate.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Integrala.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="VerificareAlfabet.h">
@@ -144,6 +147,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="BancnoteNelimitate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Integrala.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

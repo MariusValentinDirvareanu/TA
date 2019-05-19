@@ -22,6 +22,7 @@
 #include "MaximFunctie.h"
 #include "Submultimi.h"
 #include "BancnoteNelimitate.h"
+#include "Integrala.h"
 
 
 int main() {
@@ -408,7 +409,9 @@ int main() {
 					break;
 
 				case 2:
-					// Integrala()
+				{
+					Integrala* integrala = new Integrala;
+				}
 					break;
 
 				case 0:
