@@ -21,8 +21,9 @@ Binar::Binar(int n) {
 	C->v = q;
 	C->urm = nullptr;
 	B1->urm = C;
-	B2 = new lista;
+	print(B1);
 	for (int i = 2; i <= n; ++i) {
+		B2 = new lista;
 		q = new nod;
 		q->val = 0;
 		q->next = B1->v;
@@ -31,8 +32,10 @@ Binar::Binar(int n) {
 		C = B1;
 		U = B2;
 		bin(0);
+		C = B1;
 		bin(1);
 		//print(B1);
+		//std::cout << " ";
 		print(B2);
 		B1 = B2;
 	}
@@ -43,13 +46,28 @@ void Binar::bin(int factor) {
 	while (C->urm) {
 		q = new nod;
 		q->val = factor;
-		q->next = C->urm->v;
+		if (factor == 0) {
+			q->next = C->urm->v;
+		}
+		else {
+			q->next = C->v;
+		}
 		V = new lista;
 		V->v = q;
 		V->urm = nullptr;
 		U->urm = V;
 		U = V;
 		C = C->urm;
+	}
+	if (factor == 1) {
+		q = new nod;
+		q->val = factor;
+		q->next = C->v;
+		V = new lista;
+		V->v = q;
+		V->urm = nullptr;
+		U->urm = V;
+		U = V;
 	}
 }
 

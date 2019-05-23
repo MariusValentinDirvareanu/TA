@@ -345,7 +345,7 @@ int main() {
 
 				case 4:
 				{
-					Binar b(5);
+					Binar b(4);
 				}
 				break;
 
